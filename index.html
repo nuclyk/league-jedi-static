@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>League Jedi</title>
+  </head>
+  <body>
+    <main class="container">
+      <form class="search-form">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="find summoner..."
+        />
+      </form>
+      <section class="section summoner-info">
+        <article class="primary-info">
+          <img src="./img/profile-icon.png" class="profile-image" alt="" />
+          <div class="summoner">
+            <h1>zyb</h1>
+            <p>Ladder Rank 2</p>
+          </div>
+        </article>
+        <article class="secondary-info">
+          <div class="rank-image">
+            <img src="./img/rank-icon.png" alt="" />
+          </div>
+          <div class="rank-info">
+            <h2 class="rank-name">Challenger</h2>
+            <p>1,666LP</p>
+            <p>227W 132L</p>
+            <p>Win Rate 63%</p>
+          </div>
+        </article>
+      </section>
+      <!-- MATCHES SECTION -->
+      <section class="matches section">
+        <!-- single match overview -->
+        <article class="match victory">
+          <div class="match-result">
+            <h4 class="match-type">Ranked Solo</h4>
+            <p>2 days ago</p>
+            <div class="underline"></div>
+            <p class="success">Victory</p>
+            <p>22 min 57 sec</p>
+          </div>
+          <div class="player">
+            <div class="player-icon">
+              <img src="./img/champ-icon.png" class="player-champ" alt="" />
+            </div>
+            <div class="player-spells">
+              <img src="./img/summoner-spell1.png" alt="" />
+              <img src="./img/summoner-spell2.png" alt="" />
+              <img src="./img/rune-1.png" alt="" />
+              <img src="./img/rune-2.png" alt="" />
+            </div>
+            <div class="player-items">
+              <img src="./img/item-1.png" alt="" />
+              <img src="./img/item-2.png" alt="" />
+              <img src="./img/item-3.png" alt="" />
+              <img src="./img/item-4.png" alt="" />
+              <img src="./img/item-5.png" alt="" />
+              <img src="./img/item-6.png" alt="" />
+              <img src="./img/item-7.png" alt="" />
+            </div>
+          </div>
+          <div class="match-info">
+            <p class="danger">P/Kill 80%</p>
+            <p>Control Ward 2</p>
+            <div class="underline"></div>
+            <p>CS 190 (6.5)</p>
+            <p>Grandmaster</p>
+          </div>
+          <div class="match-players">
+            <div class="team-1">
+              <p>
+                <img src="./img/champ-icon-small-1.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-2.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-3.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-4.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-5.png" alt="" />Player name 1
+              </p>
+            </div>
+            <div class="team-2">
+              <p>
+                <img src="./img/champ-icon-small-1.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-2.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-3.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-4.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-5.png" alt="" />Player name 1
+              </p>
+            </div>
+          </div>
+        </article>
+        <!-- end of single match overview -->
+        <!-- match details -->
+        <section class="match-table section">
+          <table class="table-victory">
+            <thead>
+              <tr>
+                <th>Victory (Red Team)</th>
+                <th>KDA</th>
+                <th>Damage</th>
+                <th>Wards</th>
+                <th>CS</th>
+                <th>Items</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- player stats -->
+              <tr>
+                <td class="cell-1">
+                  <img src="./img/Sejuani.webp" class="item-1" alt="" />
+                  <div class="item-2">
+                    <img src="./img/summoner-spell1.png" alt="" />
+                    <img src="./img/summoner-spell2.png" alt="" />
+                    <img src="./img/rune-1.png" alt="" />
+                    <img src="./img/rune-2.png" alt="" />
+                  </div>
+                  <div class="item-3">
+                    <p>Player Name</p>
+                    <span class="small-text">Grandmaster</span>
+                  </div>
+                </td>
+                <td class="cell-2">
+                  <p>5/3/12 (41%)</p>
+                  <p>5.67:1</p>
+                </td>
+                <td class="cell-3">
+                  <div class="item-1">23,160</div>
+                  <div class="item-2"></div>
+                </td>
+                <td class="cell-3">
+                  <p>0</p>
+                  <p>9 / 1</p>
+                </td>
+                <td class="cell-4">
+                  <p>181</p>
+                  <p>6.2/m</p>
+                </td>
+                <td class="cell-5">
+                  <img src="./img/item-1.png" alt="" />
+                  <img src="./img/item-2.png" alt="" />
+                  <img src="./img/item-3.png" alt="" />
+                  <img src="./img/item-4.png" alt="" />
+                  <img src="./img/item-5.png" alt="" />
+                  <img src="./img/item-6.png" alt="" />
+                  <img src="./img/item-7.png" alt="" />
+                </td>
+              </tr>
+              <!-- end of player stats -->
+              <!-- player stats -->
+              <tr>
+                <td class="cell-1">
+                  <img src="./img/Sejuani.webp" class="item-1" alt="" />
+                  <div class="item-2">
+                    <img src="./img/summoner-spell1.png" alt="" />
+                    <img src="./img/summoner-spell2.png" alt="" />
+                    <img src="./img/rune-1.png" alt="" />
+                    <img src="./img/rune-2.png" alt="" />
+                  </div>
+                  <div class="item-3">
+                    <p>Player Name</p>
+                    <span class="small-text">Grandmaster</span>
+                  </div>
+                </td>
+                <td class="cell-2">
+                  <p>5/3/12 (41%)</p>
+                  <p>5.67:1</p>
+                </td>
+                <td class="cell-3">
+                  <div class="item-1">23,160</div>
+                  <div class="item-2"></div>
+                </td>
+                <td class="cell-3">
+                  <p>0</p>
+                  <p>9 / 1</p>
+                </td>
+                <td class="cell-4">
+                  <p>181</p>
+                  <p>6.2/m</p>
+                </td>
+                <td class="cell-5">
+                  <img src="./img/item-1.png" alt="" />
+                  <img src="./img/item-2.png" alt="" />
+                  <img src="./img/item-3.png" alt="" />
+                  <img src="./img/item-4.png" alt="" />
+                  <img src="./img/item-5.png" alt="" />
+                  <img src="./img/item-6.png" alt="" />
+                  <img src="./img/item-7.png" alt="" />
+                </td>
+              </tr>
+              <!-- end of player stats -->
+              <!-- player stats -->
+              <tr>
+                <td class="cell-1">
+                  <img src="./img/Sejuani.webp" class="item-1" alt="" />
+                  <div class="item-2">
+                    <img src="./img/summoner-spell1.png" alt="" />
+                    <img src="./img/summoner-spell2.png" alt="" />
+                    <img src="./img/rune-1.png" alt="" />
+                    <img src="./img/rune-2.png" alt="" />
+                  </div>
+                  <div class="item-3">
+                    <p>Player Name</p>
+                    <span class="small-text">Grandmaster</span>
+                  </div>
+                </td>
+                <td class="cell-2">
+                  <p>5/3/12 (41%)</p>
+                  <p>5.67:1</p>
+                </td>
+                <td class="cell-3">
+                  <div class="item-1">23,160</div>
+                  <div class="item-2"></div>
+                </td>
+                <td class="cell-3">
+                  <p>0</p>
+                  <p>9 / 1</p>
+                </td>
+                <td class="cell-4">
+                  <p>181</p>
+                  <p>6.2/m</p>
+                </td>
+                <td class="cell-5">
+                  <img src="./img/item-1.png" alt="" />
+                  <img src="./img/item-2.png" alt="" />
+                  <img src="./img/item-3.png" alt="" />
+                  <img src="./img/item-4.png" alt="" />
+                  <img src="./img/item-5.png" alt="" />
+                  <img src="./img/item-6.png" alt="" />
+                  <img src="./img/item-7.png" alt="" />
+                </td>
+              </tr>
+              <!-- end of player stats -->
+              <!-- player stats -->
+              <tr>
+                <td class="cell-1">
+                  <img src="./img/Sejuani.webp" class="item-1" alt="" />
+                  <div class="item-2">
+                    <img src="./img/summoner-spell1.png" alt="" />
+                    <img src="./img/summoner-spell2.png" alt="" />
+                    <img src="./img/rune-1.png" alt="" />
+                    <img src="./img/rune-2.png" alt="" />
+                  </div>
+                  <div class="item-3">
+                    <p>Player Name</p>
+                    <span class="small-text">Grandmaster</span>
+                  </div>
+                </td>
+                <td class="cell-2">
+                  <p>5/3/12 (41%)</p>
+                  <p>5.67:1</p>
+                </td>
+                <td class="cell-3">
+                  <div class="item-1">23,160</div>
+                  <div class="item-2"></div>
+                </td>
+                <td class="cell-3">
+                  <p>0</p>
+                  <p>9 / 1</p>
+                </td>
+                <td class="cell-4">
+                  <p>181</p>
+                  <p>6.2/m</p>
+                </td>
+                <td class="cell-5">
+                  <img src="./img/item-1.png" alt="" />
+                  <img src="./img/item-2.png" alt="" />
+                  <img src="./img/item-3.png" alt="" />
+                  <img src="./img/item-4.png" alt="" />
+                  <img src="./img/item-5.png" alt="" />
+                  <img src="./img/item-6.png" alt="" />
+                  <img src="./img/item-7.png" alt="" />
+                </td>
+              </tr>
+              <!-- end of player stats -->
+              <!-- player stats -->
+              <tr>
+                <td class="cell-1">
+                  <img src="./img/Sejuani.webp" class="item-1" alt="" />
+                  <div class="item-2">
+                    <img src="./img/summoner-spell1.png" alt="" />
+                    <img src="./img/summoner-spell2.png" alt="" />
+                    <img src="./img/rune-1.png" alt="" />
+                    <img src="./img/rune-2.png" alt="" />
+                  </div>
+                  <div class="item-3">
+                    <p>Player Name</p>
+                    <span class="small-text">Grandmaster</span>
+                  </div>
+                </td>
+                <td class="cell-2">
+                  <p>5/3/12 (41%)</p>
+                  <p>5.67:1</p>
+                </td>
+                <td class="cell-3">
+                  <div class="item-1">23,160</div>
+                  <div class="item-2"></div>
+                </td>
+                <td class="cell-3">
+                  <p>0</p>
+                  <p>9 / 1</p>
+                </td>
+                <td class="cell-4">
+                  <p>181</p>
+                  <p>6.2/m</p>
+                </td>
+                <td class="cell-5">
+                  <img src="./img/item-1.png" alt="" />
+                  <img src="./img/item-2.png" alt="" />
+                  <img src="./img/item-3.png" alt="" />
+                  <img src="./img/item-4.png" alt="" />
+                  <img src="./img/item-5.png" alt="" />
+                  <img src="./img/item-6.png" alt="" />
+                  <img src="./img/item-7.png" alt="" />
+                </td>
+              </tr>
+              <!-- end of player stats -->
+            </tbody>
+          </table>
+
+          <!-- end of match details -->
+          <!-- match summary -->
+          <div class="match-summary">
+            <div class="match-objectives">
+              <img src="./img/icon-baron.jpg" class="baron-icon" alt="" /> 1
+              <img src="./img/icon-dragon.jpg" class="baron-icon" alt="" /> 3
+              <img src="./img/icon-tower.jpg" class="baron-icon" alt="" /> 4
+            </div>
+            <div>
+              <div class="total-bar kills">
+                <p>Total Kills</p>
+                <div></div>
+              </div>
+              <div class="total-bar gold">
+                <p>Total Gold</p>
+                <div></div>
+              </div>
+            </div>
+            <div class="match-objectives">
+              <img src="./img/icon-baron.jpg" class="baron-icon" alt="" /> 2
+              <img src="./img/icon-dragon.jpg" class="baron-icon" alt="" /> 5
+              <img src="./img/icon-tower.jpg" class="baron-icon" alt="" /> 3
+            </div>
+          </div>
+          <!-- end of match summary -->
+          <table class="table-defeat">
+            <thead>
+              <tr>
+                <th>Defeat (Blue Team)</th>
+                <th>KDA</th>
+                <th>Damage</th>
+                <th>Wards</th>
+                <th>CS</th>
+                <th>Items</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- player stats -->
+              <tr>
+                <td class="cell-1">
+                  <img src="./img/Sejuani.webp" class="item-1" alt="" />
+                  <div class="item-2">
+                    <img src="./img/summoner-spell1.png" alt="" />
+                    <img src="./img/summoner-spell2.png" alt="" />
+                    <img src="./img/rune-1.png" alt="" />
+                    <img src="./img/rune-2.png" alt="" />
+                  </div>
+                  <div class="item-3">
+                    <p>Player Name</p>
+                    <span class="small-text">Grandmaster</span>
+                  </div>
+                </td>
+                <td class="cell-2">
+                  <p>5/3/12 (41%)</p>
+                  <p>5.67:1</p>
+                </td>
+                <td class="cell-3">
+                  <div class="item-1">23,160</div>
+                  <div class="item-2"></div>
+                </td>
+                <td class="cell-3">
+                  <p>0</p>
+                  <p>9 / 1</p>
+                </td>
+                <td class="cell-4">
+                  <p>181</p>
+                  <p>6.2/m</p>
+                </td>
+                <td class="cell-5">
+                  <img src="./img/item-1.png" alt="" />
+                  <img src="./img/item-2.png" alt="" />
+                  <img src="./img/item-3.png" alt="" />
+                  <img src="./img/item-4.png" alt="" />
+                  <img src="./img/item-5.png" alt="" />
+                  <img src="./img/item-6.png" alt="" />
+                  <img src="./img/item-7.png" alt="" />
+                </td>
+              </tr>
+              <!-- end of player stats -->
+              <!-- player stats -->
+              <tr>
+                <td class="cell-1">
+                  <img src="./img/Sejuani.webp" class="item-1" alt="" />
+                  <div class="item-2">
+                    <img src="./img/summoner-spell1.png" alt="" />
+                    <img src="./img/summoner-spell2.png" alt="" />
+                    <img src="./img/rune-1.png" alt="" />
+                    <img src="./img/rune-2.png" alt="" />
+                  </div>
+                  <div class="item-3">
+                    <p>Player Name</p>
+                    <span class="small-text">Grandmaster</span>
+                  </div>
+                </td>
+                <td class="cell-2">
+                  <p>5/3/12 (41%)</p>
+                  <p>5.67:1</p>
+                </td>
+                <td class="cell-3">
+                  <div class="item-1">23,160</div>
+                  <div class="item-2"></div>
+                </td>
+                <td class="cell-3">
+                  <p>0</p>
+                  <p>9 / 1</p>
+                </td>
+                <td class="cell-4">
+                  <p>181</p>
+                  <p>6.2/m</p>
+                </td>
+                <td class="cell-5">
+                  <img src="./img/item-1.png" alt="" />
+                  <img src="./img/item-2.png" alt="" />
+                  <img src="./img/item-3.png" alt="" />
+                  <img src="./img/item-4.png" alt="" />
+                  <img src="./img/item-5.png" alt="" />
+                  <img src="./img/item-6.png" alt="" />
+                  <img src="./img/item-7.png" alt="" />
+                </td>
+              </tr>
+              <!-- end of player stats -->
+              <!-- player stats -->
+              <tr>
+                <td class="cell-1">
+                  <img src="./img/Sejuani.webp" class="item-1" alt="" />
+                  <div class="item-2">
+                    <img src="./img/summoner-spell1.png" alt="" />
+                    <img src="./img/summoner-spell2.png" alt="" />
+                    <img src="./img/rune-1.png" alt="" />
+                    <img src="./img/rune-2.png" alt="" />
+                  </div>
+                  <div class="item-3">
+                    <p>Player Name</p>
+                    <span class="small-text">Grandmaster</span>
+                  </div>
+                </td>
+                <td class="cell-2">
+                  <p>5/3/12 (41%)</p>
+                  <p>5.67:1</p>
+                </td>
+                <td class="cell-3">
+                  <div class="item-1">23,160</div>
+                  <div class="item-2"></div>
+                </td>
+                <td class="cell-3">
+                  <p>0</p>
+                  <p>9 / 1</p>
+                </td>
+                <td class="cell-4">
+                  <p>181</p>
+                  <p>6.2/m</p>
+                </td>
+                <td class="cell-5">
+                  <img src="./img/item-1.png" alt="" />
+                  <img src="./img/item-2.png" alt="" />
+                  <img src="./img/item-3.png" alt="" />
+                  <img src="./img/item-4.png" alt="" />
+                  <img src="./img/item-5.png" alt="" />
+                  <img src="./img/item-6.png" alt="" />
+                  <img src="./img/item-7.png" alt="" />
+                </td>
+              </tr>
+              <!-- end of player stats -->
+              <!-- player stats -->
+              <tr>
+                <td class="cell-1">
+                  <img src="./img/Sejuani.webp" class="item-1" alt="" />
+                  <div class="item-2">
+                    <img src="./img/summoner-spell1.png" alt="" />
+                    <img src="./img/summoner-spell2.png" alt="" />
+                    <img src="./img/rune-1.png" alt="" />
+                    <img src="./img/rune-2.png" alt="" />
+                  </div>
+                  <div class="item-3">
+                    <p>Player Name</p>
+                    <span class="small-text">Grandmaster</span>
+                  </div>
+                </td>
+                <td class="cell-2">
+                  <p>5/3/12 (41%)</p>
+                  <p>5.67:1</p>
+                </td>
+                <td class="cell-3">
+                  <div class="item-1">23,160</div>
+                  <div class="item-2"></div>
+                </td>
+                <td class="cell-3">
+                  <p>0</p>
+                  <p>9 / 1</p>
+                </td>
+                <td class="cell-4">
+                  <p>181</p>
+                  <p>6.2/m</p>
+                </td>
+                <td class="cell-5">
+                  <img src="./img/item-1.png" alt="" />
+                  <img src="./img/item-2.png" alt="" />
+                  <img src="./img/item-3.png" alt="" />
+                  <img src="./img/item-4.png" alt="" />
+                  <img src="./img/item-5.png" alt="" />
+                  <img src="./img/item-6.png" alt="" />
+                  <img src="./img/item-7.png" alt="" />
+                </td>
+              </tr>
+              <!-- end of player stats -->
+              <!-- player stats -->
+              <tr>
+                <td class="cell-1">
+                  <img src="./img/Sejuani.webp" class="item-1" alt="" />
+                  <div class="item-2">
+                    <img src="./img/summoner-spell1.png" alt="" />
+                    <img src="./img/summoner-spell2.png" alt="" />
+                    <img src="./img/rune-1.png" alt="" />
+                    <img src="./img/rune-2.png" alt="" />
+                  </div>
+                  <div class="item-3">
+                    <p>Player Name</p>
+                    <span class="small-text">Grandmaster</span>
+                  </div>
+                </td>
+                <td class="cell-2">
+                  <p>5/3/12 (41%)</p>
+                  <p>5.67:1</p>
+                </td>
+                <td class="cell-3">
+                  <div class="item-1">23,160</div>
+                  <div class="item-2"></div>
+                </td>
+                <td class="cell-3">
+                  <p>0</p>
+                  <p>9 / 1</p>
+                </td>
+                <td class="cell-4">
+                  <p>181</p>
+                  <p>6.2/m</p>
+                </td>
+                <td class="cell-5">
+                  <img src="./img/item-1.png" alt="" />
+                  <img src="./img/item-2.png" alt="" />
+                  <img src="./img/item-3.png" alt="" />
+                  <img src="./img/item-4.png" alt="" />
+                  <img src="./img/item-5.png" alt="" />
+                  <img src="./img/item-6.png" alt="" />
+                  <img src="./img/item-7.png" alt="" />
+                </td>
+              </tr>
+              <!-- end of player stats -->
+            </tbody>
+          </table>
+        </section>
+        <!-- single match overview -->
+        <article class="match victory">
+          <div class="match-result">
+            <h4 class="match-type">Ranked Solo</h4>
+            <p>2 days ago</p>
+            <div class="underline"></div>
+            <p class="success">Victory</p>
+            <p>22 min 57 sec</p>
+          </div>
+          <div class="player">
+            <div class="player-icon">
+              <img src="./img/champ-icon.png" class="player-champ" alt="" />
+            </div>
+            <div class="player-spells">
+              <img src="./img/summoner-spell1.png" alt="" />
+              <img src="./img/summoner-spell2.png" alt="" />
+              <img src="./img/rune-1.png" alt="" />
+              <img src="./img/rune-2.png" alt="" />
+            </div>
+            <div class="player-items">
+              <img src="./img/item-1.png" alt="" />
+              <img src="./img/item-2.png" alt="" />
+              <img src="./img/item-3.png" alt="" />
+              <img src="./img/item-4.png" alt="" />
+              <img src="./img/item-5.png" alt="" />
+              <img src="./img/item-6.png" alt="" />
+              <img src="./img/item-7.png" alt="" />
+            </div>
+          </div>
+          <div class="match-info">
+            <p class="danger">P/Kill 80%</p>
+            <p>Control Ward 2</p>
+            <div class="underline"></div>
+            <p>CS 190 (6.5)</p>
+            <p>Grandmaster</p>
+          </div>
+          <div class="match-players">
+            <div class="team-1">
+              <p>
+                <img src="./img/champ-icon-small-1.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-2.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-3.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-4.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-5.png" alt="" />Player name 1
+              </p>
+            </div>
+            <div class="team-2">
+              <p>
+                <img src="./img/champ-icon-small-1.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-2.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-3.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-4.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-5.png" alt="" />Player name 1
+              </p>
+            </div>
+          </div>
+        </article>
+        <!-- end of single match overview -->
+        <!-- single match overview -->
+        <article class="match victory">
+          <div class="match-result">
+            <h4 class="match-type">Ranked Solo</h4>
+            <p>2 days ago</p>
+            <div class="underline"></div>
+            <p class="success">Victory</p>
+            <p>22 min 57 sec</p>
+          </div>
+          <div class="player">
+            <div class="player-icon">
+              <img src="./img/champ-icon.png" class="player-champ" alt="" />
+            </div>
+            <div class="player-spells">
+              <img src="./img/summoner-spell1.png" alt="" />
+              <img src="./img/summoner-spell2.png" alt="" />
+              <img src="./img/rune-1.png" alt="" />
+              <img src="./img/rune-2.png" alt="" />
+            </div>
+            <div class="player-items">
+              <img src="./img/item-1.png" alt="" />
+              <img src="./img/item-2.png" alt="" />
+              <img src="./img/item-3.png" alt="" />
+              <img src="./img/item-4.png" alt="" />
+              <img src="./img/item-5.png" alt="" />
+              <img src="./img/item-6.png" alt="" />
+              <img src="./img/item-7.png" alt="" />
+            </div>
+          </div>
+          <div class="match-info">
+            <p class="danger">P/Kill 80%</p>
+            <p>Control Ward 2</p>
+            <div class="underline"></div>
+            <p>CS 190 (6.5)</p>
+            <p>Grandmaster</p>
+          </div>
+          <div class="match-players">
+            <div class="team-1">
+              <p>
+                <img src="./img/champ-icon-small-1.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-2.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-3.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-4.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-5.png" alt="" />Player name 1
+              </p>
+            </div>
+            <div class="team-2">
+              <p>
+                <img src="./img/champ-icon-small-1.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-2.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-3.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-4.png" alt="" />Player name 1
+              </p>
+              <p>
+                <img src="./img/champ-icon-small-5.png" alt="" />Player name 1
+              </p>
+            </div>
+          </div>
+        </article>
+        <!-- end of single match overview -->
+      </section>
+    </main>
+  </body>
+</html>
